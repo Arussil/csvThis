@@ -14,7 +14,7 @@ def csvThis(filename, sheet, delimiter, output=None):
     wb = load_workbook(filename.as_posix())
     ws = wb[sheet]
     if not output:
-        output = "test"
+        output = filename.stem
     csv_file = open("{filename}.csv".format(filename=output), 'w')
     writer = csv.writer(csv_file, delimiter=delimiter, quoting=csv.QUOTE_ALL)
 
