@@ -33,7 +33,7 @@ def csvThis(filename, sheet, delimiter, output=None):
 
 if __name__ == "__main__":
     """
-    Parse some parameters
+    Parse some arguments
     """
     parser = argparse.ArgumentParser()
     parser.add_argument("-f", "--xlsx_file", required=True, help="specify the file to convert")
